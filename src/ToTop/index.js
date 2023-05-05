@@ -1,4 +1,4 @@
-export default function ToTop() {
+export default function ToTop({backgroundColor}) {
   return (
     <div
       onClick={() => {
@@ -13,7 +13,7 @@ export default function ToTop() {
         position: 'fixed',
         right: '10px',
         bottom: '10px',
-        backgroundColor: 'orange',
+        backgroundColor: backgroundColor || 'orange',
       }}>
       ↑
     </div>

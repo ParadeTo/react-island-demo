@@ -1,6 +1,9 @@
 module.exports = {
   mode: 'development',
-  entry: './client.entry.js',
+  entry: {
+    client: './client.entry.js',
+    clientIsland: './client.island.entry.js',
+  },
   module: {
     rules: [
       {
@@ -10,7 +13,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
         exclude: /node_modules/,
       },
     ],

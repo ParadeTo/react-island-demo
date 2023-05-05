@@ -27,7 +27,7 @@ app.get('/', (req, res, next) => {
   </head>
   <body>
     <div id='root'>${str}</div>
-    <script src='/main.js'></script>
+    <script src='/clientIsland.js'></script>
   </body>
   </html>`)
 })
